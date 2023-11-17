@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <script>document.addEventListener("DOMContentLoaded", function() {
+        var navLinks = document.querySelectorAll('.navBar ul li a');
+    
+        navLinks.forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+    
+                var targetId = this.getAttribute('href').substring(1);
+                var targetElement = document.getElementById(targetId);
+    
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    });
+    </script>
+    <!--navbar-->
+    <div class="navBar">
+        <nav>
+            <div class="logo">
+                <a href="#home">
+                    <img src="" alt="">
+                    <h1>Portofolio</h1>
+                </a>
+            </div>
+            <div class="sideNav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!--hero section -->
+    <section class="hero-section" id="home">
+        <div class="hero-container">
+            <div class="judul">
+                <h2>HI, I am Dhiya Ulhaq!</h2>
+                <p>Saya merupakan Mahasiswa Politeknik Harapan Bersama Tegal. Saya Web Development khususnya dibidang back end.</p>
+            </div>
+            <img src="D:\web porto uts\Pemrogramanweb1\portofolio\img\WhatsApp Image 2023-11-16 at 14.48.36_290944ab.jpg" alt="developer_male">
+        </div>
+    </section>
+
+    <!--about us-->
+    <section id="about">
+        <div class="about-me">
+            <h2>About Me </h2>
+            <p>Halo saya Muhammad Dhiya Ulhaq, saya biasa dipanggil Ulhaq. Saya selain sebagai mahasiswa aktif di Politeknik Harapan Bersama Tegal, saya juga bekerja di Pizza Hut Restoran Tegal. <br><br> Sebagai Mahasiswa Teknik Informatika bidang yang saya kuasai yaitu Web Developer. Beberapa Bahasa pemrograman yang saya ketahui Phyton, JavaScript dan pengembangan Web. <br><br> Beberapa Project yang telah saya buat antara lain: Menulis Artikel pada portal berita Online yang berjudul "Peran Komika Stand Up Comedy dalam Pengawalan Kebijakan Pemerintah", membuat Website E-Learning pada MAN kota Tegal, mereview gadget yang sudah terpublikasi di platform Youtube, membuat E-Commers meggunakan Prestashop. <br><br> saya atau hobi yang biasa saya lakukan yaitu olahraga, mengikuti perkembangan dunia IT, berusaha belajar dunia IT, mengikuti perkembangan Stand Up Comedy Indonesia. <br><br> Tujuan saya mengambil jurusan Informatika agar dapat bersaing di dunia IT dan bisa mendapatkan pekerjaan sesuai bidang dan tentunya dapat bekerja di perusahaan IT ternama di Indonesia.</p>
+        </div>
+    </section>
+
+    <section id="project">
+        <div class="my-project">
+            <ul>
+                <li>My Project</li>
+            </ul>
+            <p>
+                <li>Website E-Learning MAN Kota Tegal: <a href="https://youtu.be/bVG-s9oz9PI?si=GaUZWnSDjc5NfEEq">Video penjelasan Website E-Learning MAN Kota Tegal</a></li>
+                <li>Membuat Artikel tentang: <a href="https://jurnalpost.com/peran-komika-stand-up-comedy-dalam-pengawalan-kebijakan-pemerintah/51786/">Peran Komika Stand Up Comedy dalam Pengawalan Kebijakan Pemerintah</a></li>
+                <li>Membuat Video Review Xiaomi Redmi Note 8 : <a href="https://youtu.be/NUHaoF2a8FU?si=DuqMMyb23zA3xX3G">Review Xiaomi Redmi Note 8</a></li>
+                <li>Sertivikasi Huwawei "Python Programing Basic"</li>
+                <li>Resume: <a href="https://docs.google.com/document/d/1hkd1v2-iuk1T0Miyn2fagW-MAghUZU45a4tICd-qSQg/edit">Resume Seminar Invofest 2023</a></li>
+            </p>
+        </div>
+    </section> 
+    
+    <!--contact-->
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Hubungi Saya</h2>
+            <form>
+                <label for="name">Nama</label>
+                <input type="text" id="name ">
+                <label for="email">Email</label>
+                <input type="email" id="email ">
+                <label for="pesan">Pesan</label>
+                <textarea name="pesan" id="pesan" cols="30" rows="10"></textarea>
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer>
+        <div class="footer-content">
+            <h3>Portofolio</h3>
+            <p>Anda dapat mengunjungi berbagai sosial media saya!</p>
+            <ul class="socials">
+                <li><a href="https://github.com/dhiyaulhaq12"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://instagram.com/dhiyulhaq_?utm_source=qr&igshid=OGIxMTE0OTdkZA=="><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/muhammad-dhiya-ulhaq-undefined-58487a256"><i class="fa fa-linkedin"></i></a></li>
+                <li><i class="fa fa-phone"> 089667229806 </i></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>By Dhiya Ulhaq Politeknik Harapan Bersama Tegal</p>
+        </div>
+    </footer>
+</body>
+</html>
